@@ -1,3 +1,4 @@
+/* ----- Google JS Style Guide Examples ----- */
 // Variables
 const SOME_CONSTANT = 5;
 let someVariable = 'string WITH SINGLE QUOTES';
