@@ -1,153 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&family=Arvo&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-/* ---------- GLOBAL STYLES --------- */
-body {
-    padding-top: 3.5rem;
-    color: white;
+/* GENERAL */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: rgba(0, 0, 0, 0.1);
+    color: skyblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.bg-navy {
-    background-color: #030478 !important;
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
 }
 
-.text-navy {
-    color: #030478 !important;
+/* HOOK */
+
+/* ABOUT */
+
+/* TEXT COLORS */
+.text-sky-blue {
+    color: skyblue !important;
 }
 
-.bg-pastel-purple {
-    background-color: #5e4ae3 !important;
+a.text-sky-blue:hover {
+    color: #45B4DF !important;
 }
 
-.border-pastel-purple {
-    border-color: #5e4ae3 !important;
+.text-purple-to-blue {
+    background: linear-gradient(to right, #9708CC 0%, #14BDFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.text-pastel-purple {
-    color: #5e4ae3 !important;
+.text-yellow-to-blue {
+    background: linear-gradient(to right, #FFEA98 0%, #14BDFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.bg-sky {
-    background-color: #aed0e9 !important;
+.text-blue-to-white {
+    background: linear-gradient(to right, #14BDFF 0%, white 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.text-sky {
-    color: #aed0e9 !important;
+.text-blue-to-blue {
+    background: linear-gradient(to right, #14BDFF 0%, #36C6FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a.text-blue-to-blue:hover {
+    background: linear-gradient(to right, #00A9EC 0%, #00AFF4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.text-yellow-to-yellow {
+    background: linear-gradient(to right, #E3D53A 0%, #FFEA98 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a.text-yellow-to-yellow:hover {
+    background: linear-gradient(to right, #C4B61C 0%, #FFD324 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* BACKGROUND COLORS */
+.bg-purple-gradient {
+    background-image: linear-gradient(to bottom right, #3B2667, #BC78EC 100%);
 }
 
 .bg-purple {
     background-color: #390099 !important;
 }
 
-.text-purple {
-    color: #390099 !important;
-}
-
 .bg-raspberry {
     background-color: #9e0059 !important;
 }
 
-.text-raspberry {
-    color: #9e0059 !important;
+.bg-raspberry-gradient {
+    background-image: linear-gradient(to bottom right, #9e0059, #88004D 100%);
 }
 
 .bg-pink {
     background-color: #ff0054 !important;
 }
 
-.border-pink {
-    border-color: #ff0054 !important;
-}
-
-.text-pink {
-    color: #ff0054 !important;
-}
-
-.bg-orange {
-    background-color: #ff5400 !important;
-}
-
-.border-orange {
-    border-color: #ff5400 !important;
-}
-
-.text-orange {
-    color: #ff5400 !important;
-}
-
-.bg-raspberry {
-    background-color: #9e0059 !important;
-}
-
-.text-raspberry {
-    color: #9e0059 !important;
-}
-
-.bg-yellow {
-    background-color: #ffbd00 !important;
-}
-
-.text-yellow {
-    color: #ffbd00 !important;
+.bg-sky {
+    background-color: #aed0e9 !important;
 }
 
 .bg-navier {
     background-color: #003049 !important;
 }
 
-.text-navier {
-    color: #003049 !important;
-}
-
-a {
-    /*color: #ff0054 !important;*/
-    color: white !important;
-}
-
-.active {
-    font-weight: bold;
-}
-
-/* ---------- HOME --------- */
-#someUniqueElement {
-
-}
-
-.some-reused-element {
-
-}
-
-/* ---------- SOME PAGE --------- */
-
-/* ---------- MEDIA QUERIES --------- */
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-}
-
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
+.bg-navier-gradient {
+    background-image: linear-gradient(to bottom right, #003049, #005786 100%);
 }

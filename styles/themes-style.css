@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&family=Arvo&family=Ubuntu&display=swap');
+
+/* ---------- GLOBAL STYLES --------- */
+body {
+    padding-top: 3.5rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bg-navy {
+    background-color: #030478 !important;
+}
+
+.text-navy {
+    color: #030478 !important;
+}
+
+.bg-pastel-purple {
+    background-color: #5e4ae3 !important;
+}
+
+.border-pastel-purple {
+    border-color: #5e4ae3 !important;
+}
+
+.text-pastel-purple {
+    color: #5e4ae3 !important;
+}
+
+.bg-sky {
+    background-color: #aed0e9 !important;
+}
+
+.text-sky {
+    color: #aed0e9 !important;
+}
+
+.bg-purple {
+    background-color: #390099 !important;
+}
+
+.text-purple {
+    color: #390099 !important;
+}
+
+.bg-raspberry {
+    background-color: #9e0059 !important;
+}
+
+.text-raspberry {
+    color: #9e0059 !important;
+}
+
+.bg-pink {
+    background-color: #ff0054 !important;
+}
+
+.border-pink {
+    border-color: #ff0054 !important;
+}
+
+.text-pink {
+    color: #ff0054 !important;
+}
+
+.bg-orange {
+    background-color: #ff5400 !important;
+}
+
+.border-orange {
+    border-color: #ff5400 !important;
+}
+
+.text-orange {
+    color: #ff5400 !important;
+}
+
+.bg-raspberry {
+    background-color: #9e0059 !important;
+}
+
+.text-raspberry {
+    color: #9e0059 !important;
+}
+
+.bg-yellow {
+    background-color: #ffbd00 !important;
+}
+
+.text-yellow {
+    color: #ffbd00 !important;
+}
+
+.bg-navier {
+    background-color: #003049 !important;
+}
+
+.text-navier {
+    color: #003049 !important;
+}
+
+a {
+    /*color: #ff0054 !important;*/
+    color: white !important;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* ---------- HOME --------- */
+#someUniqueElement {
+
+}
+
+.some-reused-element {
+
+}
+
+/* ---------- SOME PAGE --------- */
+
+/* ---------- MEDIA QUERIES --------- */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
