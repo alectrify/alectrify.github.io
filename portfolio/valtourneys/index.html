@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="styles/fontawesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Valtourneys - Home</title>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darker border-bottom border-danger">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="index.html">
+                <img src="images/favicon.ico" width="30" height="30" alt="" style="border-radius: 25%;">
+                Valtourneys
+            </a>
+            <a href="../../" class="text-info">Return to Alectrify Site</a>
+            <ul class="navbar-nav float-left">
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html">SIGN IN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main id="homeMain">
+    <section class="jumbotron jumbotron-fluid text-center text-danger bg-darker almost-opaque mb-0">
+        <div class="container">
+            <h1>Valtourneys</h1>
+            <p class="lead font-weight-normal">Register for Valorant tournaments quickly and easily on Valtourneys
+            </p>
+
+            <img id="tournamentsPreview" src="images/tournaments_page_screenshot.png" alt="Tournaments page screenshot">
+
+            <br>
+            <a class="btn btn-danger mt-5" href="#formDiv">Sign up below to start</a>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark almost-opaque border-danger border-top">
+        <div class="container">
+            <div class="row">
+                <div id="formDiv"
+                     class="col-md-6 offset-3 bg-darker almost-opaque pb-4 my-1 rounded border border-secondary">
+
+                    <h3 class="text-center mt-4 text-danger opaque"><b>User Registration</b></h3>
+
+                    <p class="text-center"><em class="text-danger">We request your email only to send you important
+                        information and notifications about your tournaments. Your password is safely stored
+                        with
+                        encryption so that it is unable to be retrieved in raw text by anyone, including the
+                        site's
+                        developers.</em>
+                    </p>
+
+                    <!-- Signup form -->
+                    <form class="mt-5" action="dashboard.html" method="get" autocomplete="off">
+                        <div class="form-group mt-4">
+                            <input id="usernameInput" class="form-control" type="text"
+                                   placeholder="Enter Username (does not have to be Valorant username)" name="username"
+                                   pattern="[a-zA-Z0-9._]{3,15}"
+                                   title="Must contain three to fifteen characters.">
+                            <p id="usernameTakenMessage" class="text-danger font-weight-bold mb-0 d-none">The username
+                                you entered is taken.</p>
+                        </div>
+
+                        <div id="emailDiv" class="form-group mt-4">
+                            <input id="emailInput" class="form-control" type="email" placeholder="Enter Email"
+                                   name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$">
+                            <p id="emailTakenMessage" class="text-danger font-weight-bold mb-0 d-none">The email
+                                you entered is taken.</p>
+                        </div>
+
+                        <div id="passwordDiv" class="form-group mt-4">
+                            <input class="form-control" type="password" placeholder="Enter Password" name="password">
+                        </div>
+
+                        <button class="btn btn-danger btn-lg px-4 mt-4" type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Alert -->
+<div id="alert" class="alert alert-info position-fixed fixed-top d-none fade show ml-3 mt-3 w-25"
+     role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+    const alert = $('#alert');
+
+    alert.removeClass('d-none');
+    alert.prepend('This is a FRONT END ONLY demo of this project, so feel free to navigate, but note that the functionality of features such as account creation is not present on this site.');
+</script>
+</body>
+
+</html>

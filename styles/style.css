@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Kaushan+Script&family=Montserrat&display=swap');
 
 /* GENERAL */
 html {
@@ -17,11 +17,41 @@ html {
     font-family: 'Ubuntu', sans-serif;
 }
 
+nav {
+    background: rgba(0,0,0,0.1);
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: #f8f9fa;
 }
 
+/* HEADER */
+#home-header {
+    background: url("../images/lightning-bg.jpg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: scroll !important;
+}
+
+.navbar-nav {
+    font-size: 1.25rem;
+}
+
+.portfolio-preview-img {
+    width: 100%;
+    border-radius: .25rem;
+}
+
 /* HOOK */
+/*
+#lightning {
+  height:600px;
+  position:absolute;
+  top:3%;
+  left:60%;
+}
+*/
 
 /* ABOUT */
 
@@ -32,6 +62,25 @@ html {
 
 a.text-sky-blue:hover {
     color: #45B4DF !important;
+}
+
+.font-strokes {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.font-heading {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-yellow {
+    color: #E3D53A !important;
+}
+a.text-yellow:hover {
+    color: #FFD324 !important;
+}
+
+.text-shadow-border {
+    text-shadow: 0 0 2px #000000, 0 0 2px #000000;
 }
 
 .text-purple-to-blue {

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+/* ---------- GLOBAL STYLES ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    color: #5a5a5a;
+    background-color: #141a20;
+}
+
+.bg-darker {
+    background-color: #141a20 !important;
+}
+
+.opaque {
+    opacity: 1;
+}
+
+.almost-opaque {
+    opacity: 0.9;
+}
+
+.text-radiant {
+    color: #f8c471 !important;
+}
+
+.text-immortal {
+    color: #cb4335 !important;
+}
+
+.text-diamond {
+    color: #7d3c98 !important;
+}
+
+.text-platinum {
+    color: #138d75 !important;
+}
+
+/* Prevent page shift on modal popup */
+.modal {
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: auto;
+    padding-right: 0 !important;
+}
+
+/* ---------- HOME ---------- */
+#homeMain {
+    min-height: calc(100vh - 56px);
+    background-size: cover;
+    background: url("../images/Beta Key Art_VALORANT.jpg") no-repeat fixed center;
+}
+
+#tournamentsPreview {
+    width: 70%;
+    border: 4px solid #ddd;
+    border-radius: 5px;
+}
+
+/* ---------- SIGN IN ---------- */
+.signin-main {
+    min-height: calc(100vh - 56px);
+    background-size: cover;
+    background: url("../images/VALORANT_Logo_V.jpg") no-repeat fixed center;
+}
+
+/* ---------- DASHBOARD ---------- */
+#dashboardMain {
+    min-height: calc(100vh - 56px);
+    background-size: cover;
+    background: url("../images/FirstLook_Smoke_VALORANT.jpg") no-repeat fixed center;
+}
+
+.map-pool .col-3 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.map-preview {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.map-caption {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px red;
+}
+
+.map-curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 25%;
+}
+
+#rosters {
+    min-height: 60vh;
+}
+
+/* ---------- TOURNAMENT ---------- */
+#tournamentsMain {
+    background: url("https://i.redd.it/uky9yi20i9m41.jpg");
+    min-height: calc(100vh - 56px);
+    background-size: cover;
+}
+
+#tournamentsMain #tourneys {
+    min-height: 95vh;
+}
+
+.tourney-name {
+    text-transform: capitalize;
+}
+
+/* ---------- CONTACT ---------- */
+.contact-main {
+    min-height: calc(100vh - 56px);
+    background-size: cover;
+    background: url("../images/VALORANT_JETT_Duotoned.jpg") no-repeat fixed center;
+}
+
+/* ---------- MEDIA QUERIES --------- */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
