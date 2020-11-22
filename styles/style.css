@@ -30,7 +30,7 @@ html {
     font-size: 1.25rem;
 }
 
-.nav.nav-link {
+.navbar-nav .nav-link {
     color: #E3D53A !important;
 }
 
