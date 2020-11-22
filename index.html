@@ -14,6 +14,7 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
           integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
 
@@ -22,7 +23,7 @@
 
 <body>
 
-<header id="home-header" class="bg-purple-gradient pb-5">
+<header id="home-header" class="pb-5">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
@@ -44,10 +45,10 @@
                         <a class="nav-link text-yellow text-shadow-border font-heading" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-yellow text-shadow-border font-heading" href="#about">About</a>
+                        <a class="nav-link text-yellow text-shadow-border font-heading" href="learn/">Learn</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-yellow text-shadow-border font-heading" href="#contact">Contact</a>
+                        <a class="nav-link text-yellow text-shadow-border font-heading" href="#about">About</a>
                     </li>
                 </ul>
             </div>
@@ -57,12 +58,12 @@
     <!-- Brand Jumbotron -->
     <div class="container pt-5">
         <h1 class="display-2 text-yellow-to-yellow font-strokes" id="main-title">Alectrify</h1>
-        <h2 class="mt-3 mb-4 text-yellow-to-blue">Building transformative software solutions for your
+        <h2 class="mt-3 mb-4 text-yellow">Building transformative software solutions for your
             needs.</h2>
 
-        <a href="#portfolio" class="btn btn-warning btn-lg mr-4">View Our Portfolio</a>
-        <a href="#about" class="btn btn-info btn-lg mr-4">About Our Mission</a>
-        <a href="#contact" class="btn btn-light btn-lg" id="btn2">Contact Us</a>
+        <a href="#portfolio" class="btn btn-purple btn-dark btn-lg mr-4">View Our Portfolio</a>
+        <a href="learn/" class="btn btn-purple btn-dark btn-lg mr-4">Learn to Code</a>
+        <a href="#about" class="btn btn-purple btn-lg mr-4">About Our Service</a>
 
         <div class="mt-4">
             <a class="fab fa-3x fa-github text-sky-blue card-link" href="https://github.com/alectrify"></a>
@@ -72,36 +73,12 @@
             <a class="fab fa-3x fa-linkedin text-sky-blue card-link"
                href="https://linkedin.com/company/alectrify-software"></a>
         </div>
-
-        <!--
-        <img class = "img-fluid float-right" src = "images/lightning.png" id = "lightning"></img>
-      -->
     </div>
-
-    <!-- Hook -->
-    <!--
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-md-4 offset-md-2">
-                <h2 class="display-4 text-blue-to-white">Secure Software Solutions</h2>
-
-                <p class="text-blue-to-white">
-                    Provide your design and our developer team will use best practices and rigorous testing to ensure
-                    that your software is thoroughly complete and free of bugs and vulnerabilities.
-                </p>
-            </div>
-
-            <div class="col-md-6">
-                <img class="img-fluid" src="images/laptop-blue.png" alt="Blue laptop clipart image">
-            </div>
-        </div>
-    </div>
-  -->
 </header>
 
 
 <main>
-    <!-- Portfolio-->
+    <!-- Portfolio -->
     <section id="portfolio" class="bg-light py-5">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -113,9 +90,7 @@
                     <h2 class="display-4 text-purple-to-blue font-strokes">Portfolio</h2>
 
                     <p class="text-purple-to-blue">
-                        Provide your design and our developer team will use best practices and rigorous testing to
-                        ensure
-                        that your software is thoroughly complete and free of bugs and vulnerabilities.
+                        View some of our completed projects first-hand!
                     </p>
 
                     <ul class="nav nav-tabs mb-3" role="tablist">
@@ -135,8 +110,25 @@
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="valtourneysContent" role="tabpanel"
                              aria-labelledby="valtourneysTab">
-                            <img class="portfolio-preview-img" src="images/valtourneys-site-preview.png" alt="Valtourneys Project Preview">
-                            <a class="btn btn-success mt-3" href="portfolio/valtourneys/">Explore Project</a>
+                            <!-- Valtourneys Preview Carousel -->
+                            <div id="carouselValtourney" class="carousel slide" data-ride="carousel" data-interval="4000">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="portfolio-preview-img" src="images/valtourneys-home.png" alt="Valtourneys Home Preview">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="portfolio-preview-img" src="images/valtourneys-dashboard.png" alt="Valtourneys Dashboard Preview">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="portfolio-preview-img" src="images/valtourneys-tournaments.png" alt="Valtourneys Tournaments Preview">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="my-2 text-purple-to-blue">
+                                A platform that allows Valorant players to easily organize and join tournaments and teams.
+                            </p>
+                            <a class="btn btn-lg btn-success" href="portfolio/valtourneys/">Explore Project</a>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                              aria-labelledby="pills-profile-tab">...
@@ -151,42 +143,42 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="bg-raspberry-gradient py-5">
+    <section id="about" class="bg-purple-gradient py-5">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-4 offset-md-2">
-                    <h2 class="display-4 text-yellow-to-blue font-strokes">About Us</h2>
+                    <h1 class="display-4 text-yellow-to-blue font-strokes">About Us</h1>
 
                     <p class="text-yellow-to-blue">
+                        Our developers are passionate about writing robust software that has the potential to change
+                        lives.
+
+                        <br><br>
+
                         Provide your design and our developer team will use best practices and rigorous testing to
-                        ensure
-                        that your software is thoroughly complete and free of bugs and vulnerabilities.
+                        ensure that your software is thoroughly complete and free of bugs and vulnerabilities.
                     </p>
+
+                    <h2 class="text-yellow-to-blue font-strokes mt-5">Our Team</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <figure class="figure">
+                                <img src="images/adory.jpg" class="figure-img img-fluid rounded" alt="Photo of Co-Founder Adory">
+                                <figcaption class="text-yellow">Adory Vo <br> - Co-Founder <br> - Lead Developer</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-3">
+                            <figure class="figure">
+                                <img src="images/ryan.png" class="figure-img img-fluid rounded" alt="Photo of Co-Founder Ryan">
+                                <figcaption class="text-yellow">Ryan Heo <br> - Co-Founder <br> - Lead Developer</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-md-6">
                     <img class="img-fluid" src="images/laptop-blue.png" alt="Blue laptop clipart image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="bg-navier-gradient py-5">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img class="img-fluid" src="images/laptop-blue.png" alt="Blue laptop clipart image">
-                </div>
-
-                <div class="col-md-4">
-                    <h2 class="display-4 text-blue-to-white font-strokes">Contact Us</h2>
-
-                    <p class="text-blue-to-white">
-                        Provide your design and our developer team will use best practices and rigorous testing to
-                        ensure
-                        that your software is thoroughly complete and free of bugs and vulnerabilities.
-                    </p>
                 </div>
             </div>
         </div>
@@ -194,9 +186,9 @@
 </main>
 
 <!-- Footer -->
-<footer class="bg-navier border-top border-info py-4">
+<footer class="bg-footer border-top border-warning py-4">
     <div class="container text-light">
-        <span class="float-right"><a href="#" class="text-blue-to-blue">Back to top</a></span>
+        <span class="float-right"><a href="#" class="text-yellow-to-yellow">Back to top</a></span>
         <address>
             <strong>Alectrify Software</strong><br>
             9500 Gilman Dr.<br>
@@ -206,11 +198,12 @@
 
         <address>
             <strong>Email</strong><br>
-            <a href="mailto:alectrifysoftware@gmail.com" class="text-blue-to-blue">alectrifysoftware@gmail.com</a>
+            <a href="mailto:alectrifysoftware@gmail.com" class="text-yellow-to-yellow">alectrifysoftware@gmail.com</a>
         </address>
 
-        © 2020 Alectrify Software · <a href="#" class="text-blue-to-blue">Privacy</a> · <a href="#"
-                                                                                           class="text-blue-to-blue">Terms</a>
+        © 2020 Alectrify Software ·
+        <a href="#" class="text-yellow-to-yellow">Privacy</a> ·
+        <a href="#" class="text-yellow-to-yellow">Terms</a>
     </div>
 </footer>
 

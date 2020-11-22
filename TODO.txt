@@ -1,0 +1,10 @@
+Visuals
+- Revamped Learn layout (sidebar?)
+
+Code
+- Define CSS variables for colors?
+- Separate stylesheet for custom global styles
+
+Features
+- Learn articles and tutorials
+- Privacy and Terms pages

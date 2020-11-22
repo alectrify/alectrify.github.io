@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Kaushan+Script&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Kaushan+Script&display=swap');
 
 /* GENERAL */
 html {
@@ -17,20 +17,12 @@ html {
     font-family: 'Ubuntu', sans-serif;
 }
 
-nav {
-    background: rgba(0,0,0,0.1);
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #f8f9fa;
-}
-
 /* HEADER */
 #home-header {
-    background: url("../images/lightning-bg.jpg") !important;
-    background-position: center !important;
+    background-image: url("../images/lightning-bg-transparent.png"), linear-gradient(160deg, #2F2749 40%, #32127A 90%) !important;
+    background-position: 65% 10% !important;
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size: auto !important;
     background-attachment: scroll !important;
 }
 
@@ -38,24 +30,55 @@ nav {
     font-size: 1.25rem;
 }
 
+.nav.nav-link {
+    color: #E3D53A !important;
+}
+
+.navbar-nav .active>.nav-link {
+    color: #F9C700 !important;
+}
+
 .portfolio-preview-img {
-    width: 100%;
+    max-height: 60vh;
     border-radius: .25rem;
 }
 
-/* HOOK */
-/*
-#lightning {
-  height:600px;
-  position:absolute;
-  top:3%;
-  left:60%;
+
+/* BACKGROUND STYLES */
+.bg-purple-gradient {
+    background-image: linear-gradient(90deg, #2F2749 40%, #32127A 90%);
 }
-*/
 
-/* ABOUT */
+.bg-footer {
+    background-color: #28223F;
+}
 
-/* TEXT COLORS */
+/* BUTTON STYLES */
+.btn-purple {
+    color: #fff;
+    background-color: #68358F;
+    border-color: #68358F;
+}
+
+.btn-purple:hover {
+    color: #fff;
+    background-color: #462461;
+    border-color: #462461;
+}
+
+/* TEXT STYLES */
+.font-strokes {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.font-heading {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-shadow-border {
+    text-shadow: 0 0 2px #000000, 0 0 2px #000000;
+}
+
 .text-sky-blue {
     color: skyblue !important;
 }
@@ -64,23 +87,11 @@ a.text-sky-blue:hover {
     color: #45B4DF !important;
 }
 
-.font-strokes {
-    font-family: 'Kaushan Script', cursive;
-}
-
-.font-heading {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .text-yellow {
     color: #E3D53A !important;
 }
 a.text-yellow:hover {
     color: #FFD324 !important;
-}
-
-.text-shadow-border {
-    text-shadow: 0 0 2px #000000, 0 0 2px #000000;
 }
 
 .text-purple-to-blue {
@@ -95,25 +106,6 @@ a.text-yellow:hover {
     -webkit-text-fill-color: transparent;
 }
 
-.text-blue-to-white {
-    background: linear-gradient(to right, #14BDFF 0%, white 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.text-blue-to-blue {
-    background: linear-gradient(to right, #14BDFF 0%, #36C6FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-a.text-blue-to-blue:hover {
-    background: linear-gradient(to right, #00A9EC 0%, #00AFF4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 .text-yellow-to-yellow {
     background: linear-gradient(to right, #E3D53A 0%, #FFEA98 100%);
     -webkit-background-clip: text;
@@ -124,37 +116,4 @@ a.text-yellow-to-yellow:hover {
     background: linear-gradient(to right, #C4B61C 0%, #FFD324 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-/* BACKGROUND COLORS */
-.bg-purple-gradient {
-    background-image: linear-gradient(to bottom right, #3B2667, #BC78EC 100%);
-}
-
-.bg-purple {
-    background-color: #390099 !important;
-}
-
-.bg-raspberry {
-    background-color: #9e0059 !important;
-}
-
-.bg-raspberry-gradient {
-    background-image: linear-gradient(to bottom right, #9e0059, #88004D 100%);
-}
-
-.bg-pink {
-    background-color: #ff0054 !important;
-}
-
-.bg-sky {
-    background-color: #aed0e9 !important;
-}
-
-.bg-navier {
-    background-color: #003049 !important;
-}
-
-.bg-navier-gradient {
-    background-image: linear-gradient(to bottom right, #003049, #005786 100%);
 }
