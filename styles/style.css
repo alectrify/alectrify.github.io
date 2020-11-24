@@ -6,8 +6,8 @@ html {
 }
 
 ::selection {
-    background: rgba(0, 0, 0, 0.1);
-    color: skyblue;
+    background: rgba(0, 0, 0, 0.2);
+    color: #A714FF;
 }
 
 * {
@@ -19,8 +19,10 @@ html {
 
 /* HEADER */
 #home-header {
-    background-image: url("../images/lightning-bg-transparent.png"), linear-gradient(160deg, #2F2749 40%, #32127A 90%) !important;
-    background-position: 65% 10% !important;
+    background-image: url("../images/lightning-bg-4px-transparent.png"), linear-gradient(160deg, #3B2667 10%, #32127A 60%) !important;
+    /*background-image: url("../images/lightning-bg-purple.png");*/
+    background-color: #f8f9fa;
+    background-position: 95% 10% !important;
     background-repeat: no-repeat !important;
     background-size: auto !important;
     background-attachment: scroll !important;
@@ -32,6 +34,10 @@ html {
 
 .navbar-nav .nav-link {
     color: #E3D53A !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #C4B61C !important;
 }
 
 .navbar-nav .active>.nav-link {
@@ -46,11 +52,11 @@ html {
 
 /* BACKGROUND STYLES */
 .bg-purple-gradient {
-    background-image: linear-gradient(90deg, #2F2749 40%, #32127A 90%);
+    background-image: linear-gradient(90deg, #3B2667 10%, #32127A 60%);
 }
 
 .bg-footer {
-    background-color: #28223F;
+    background-color: #32127A;
 }
 
 /* BUTTON STYLES */
